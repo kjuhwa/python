@@ -1,0 +1,80 @@
+데이터타입- 연산자-제어문 -함수-클래스
+파이썬 객체( 속성 , 메소드 ) 객체.속성, 객체.메소드(..)
+1. 특정값
+2. 약속된 기호
+3. 객체 = 클래스(초기값)
+
+(C언어 Test* p = malloc(sizeof(Test))
+struct Test
+{
+	int a; //멤버데이터(속성)
+	int b;
+};
+p->a = 10;
+p->b = 20;
+
+(C++)
+class Test
+{
+public:
+	int a;//멤버데이터 
+	int b;
+//멤버함수
+	//void setData(Test*this, int x, int y)
+	void setData( int x, int y)
+	{ 
+		this->a = x;
+		this->b = y;	
+	}
+};
+Test* p = new Test;
+p->setData(100,200);//p->setData(p,100,200);
+
+(java)
+class Test
+{
+	int a; 
+	int b;
+	void setData( int x, int y)
+	{
+		this.a = x;
+		this.b = y;	
+	}
+}
+Test p = new Test(); //Test* p 동일 (참조변수)
+p.setData(100,200);
+(python)
+class Test:
+	def __init__(self):
+		self.a =0
+		self.b =0
+	def setData( self, x, y):
+		self.a = x
+		self.b = y
+
+p = Test()
+p.a = 100
+p.b = 200
+p.setData(10,20)  #p.setData(p,10,20)
+
+
+기본데이터
+- 정수, 실수, bool, 복소수
+
+복합데이터(시퀀스, iterable)
+- str, bytes, 리스트,튜플, 세트, 딕셔너리
+
+순서있는( str, bytes, 리스트, 튜플 ) --> 인덱스, 슬라이싱
+순서없는( 세트, 딕셔너리 ):  인덱스X, 슬라이싱X
+mutable( 변경가능(추가,삭제)): 리스트, 딕셔너리, bytearray, set
+immutable(X): str, bytes, 튜플 , frozen set
+(내장)
+frozen set
+
+array, namedtuple, ordered dict(순서있는), 
+Counter, dequeue
+
+
+
+
+

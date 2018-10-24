@@ -1,0 +1,12 @@
+
+1. 파이썬( www.python.org )
+
+2. 에디터툴
+1)파이참
+2)이클립스 (pydev)
+3)atom
+4)visual studio
+5)jupyter notebook
+6)anaconda(spyder), miniconda
+
+3. 파일질라
